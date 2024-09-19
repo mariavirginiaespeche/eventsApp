@@ -1,0 +1,8 @@
+<h1>Eventos de <%= @worker.name %></h1>
+<ul>
+  <% @events.each do |event| %>
+    <li><strong><%= event.title %></strong> - <%= event.start_time %></li>
+  <% end %>
+</ul>
+<%= link_to 'Volver a Trabajadores', workers_path %>
+
